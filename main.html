@@ -22,7 +22,7 @@
             </h1>
             <p class="border rounded">available balance</p>
           </div>
-          <button>logout</button>
+          <button id="log-out" class="btn btn-neutral mt-4">logout</button>
         </nav>
         <section class="mt-10">
           <h1 class="text-2xl font-bold mb-2">Welcome to Payoooo!</h1>
@@ -210,5 +210,10 @@
     <script src="./scripts/toggle.js"></script>
     <script src="./scripts/cashOut.js"></script>
     <script src="./scripts/transactionHistory.js"></script>
+    <script>
+      document.getElementById("log-out").addEventListener("click", function () {
+        window.location.href = "index.html";
+      });
+    </script>
   </body>
 </html>
